@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.ifsp.hto.exemplo20.fragment.NewFuncionarioFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etFuncNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_cargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etFuncCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cargo" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_sal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etFuncSal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salario" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departamento" />
+
+    <Spinner
+        android:id="@+id/sDep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chefe" />
+
+    <Spinner
+        android:id="@+id/sChefe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:weightSum="1">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etDiaFun"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:hint="Dia(dd)"
+            android:layout_weight="0.43" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etMesFun"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:hint="Mes(mm)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etAnoFun"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:hint="Ano(aaaa)" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etComFun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comissão" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btNovoFuncionario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Enviar" />
+</LinearLayout>
+
